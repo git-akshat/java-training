@@ -1,6 +1,4 @@
-#ignore all
-*
-
-#except
-!/training
-!.gitignore
+/.git
+/.metadata
+/.recommenders
+/RemoteSystemsTempFiles
