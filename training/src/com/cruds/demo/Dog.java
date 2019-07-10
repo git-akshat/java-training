@@ -22,10 +22,7 @@ public class Dog extends Animal implements IVehicle{
 		System.out.println("Dog Walking");
 	}
 
-	@Override
-	public void stop() {
-		System.out.println("Dog Stopping");
-	}
+	
 	
 	
 

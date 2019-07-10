@@ -12,21 +12,21 @@ public class TestAnimal {
 //		
 		
 		Animal x1 = AnimalProvider.getAnimal("FAITHFUL");
-		x1.talk();
+		x1.start();
 		
-		Animal x2 = AnimalProvider.getAnimal("CUTE");
-		x2.talk();
+//		Animal x2 = AnimalProvider.getAnimal("CUTE");
+//		x2.talk();
 		
 		// typecast
 		// ((Dog) x2).WagTail(); //classCastException
 		
-		if(x1 instanceof Dog) {
-			((Dog) x1).WagTail();
-		}
-		
-		if(x2 instanceof Dog) {
-			((Dog) x1).WagTail(); // it wont work
-		}
+//		if(x1 instanceof Dog) {
+//			((Dog) x1).WagTail();
+//		}
+//		
+//		if(x2 instanceof Dog) {
+//			((Dog) x1).WagTail(); // it wont work
+//		}
 		
 	}
 

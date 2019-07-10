@@ -29,7 +29,7 @@ public class StringArrayDemo {
 			boolean flag = false;
 			for(int i=0; i<names.length; i++) {
 				if(names[i].equals(searchName)) {
-					System.out.println("found at positon:" + i+1));
+					System.out.println("found at positon:" + (i+1));
 					flag = true;
 				}	
 			}

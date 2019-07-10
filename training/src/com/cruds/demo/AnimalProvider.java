@@ -10,7 +10,7 @@ public class AnimalProvider {
 			return new Cat();
 		}
 		
-		return null;
+		return new Animal();
 	}
 
 }
