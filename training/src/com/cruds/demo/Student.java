@@ -4,25 +4,31 @@ public class Student {
 	
 	private int rollNo;
 	private String name;
-	private String lastName;
+	//private String lastName;
 	private static int count; // to keep track of the number of object instance
 	
 //	static {
 //		System.out.println("Static block 1");
 //	}
 	
+	public Student() {
+		rollNo = -1;
+		name = null;
+	}
+	
+	
 	public Student(int rollNo, String name) {
 		this.rollNo = rollNo;
 		this.name = name;
-		System.out.println("2 arg constructor");
+		//System.out.println("2 arg constructor");
 		count++;
 	}
 	
 	public Student(int rollNo, String name, String lastName) {
 		this(rollNo, name);
-		this.lastName = lastName;
+		//this.lastName = lastName;
 		count++;
-		System.out.println("3 arg constructor");
+		//System.out.println("3 arg constructor");
 	}
 	
 	

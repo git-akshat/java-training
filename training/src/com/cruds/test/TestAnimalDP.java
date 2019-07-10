@@ -1,7 +1,11 @@
-package com.cruds.demo;
+package com.cruds.test;
 
-public class TestAnimal {
+import com.cruds.demo.Animal;
+import com.cruds.demo.AnimalProvider;
+import com.cruds.demo.Dog;
 
+public class TestAnimalDP{
+	
 	public static void main(String[] args) {
 
 //		Animal a = new Animal();
