@@ -1,20 +1,21 @@
-package com.crud.io;
+package com.cruds.io;
 
-import java.io.File;
+import java.io.DataOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileOutputStreamDemo {
+public class DataOutputStreamDemo {
 	
 	public static void main(String[] args) {
-		String msg = "Hello World!";
-		byte[] data = msg.getBytes();
 		
-		try(FileOutputStream fos = new FileOutputStream("Output.txt")){
-			fos.write(data);
-			fos.close();
-			System.out.println("File written successfully");
+		try {
+			DataOutputStream dos = new DataOutputStream(new FileOutputStream("emp.dat"));
+			dos.writeInt(101);
+			dos.writeFloat(3.1415f);
+			dos.writeUTF("akshat");
+			dos.close();
+			System.out.println("Data written Successfully");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -22,6 +23,8 @@ public class FileOutputStreamDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
 	}
 
 }

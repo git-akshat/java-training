@@ -3,3 +3,6 @@
 /.recommenders
 /RemoteSystemsTempFiles
 /training/bin/
+/training/.settings
+/training/.classpath
+/training/.project

@@ -1,4 +1,4 @@
-package com.crud.io;
+package com.cruds.io;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

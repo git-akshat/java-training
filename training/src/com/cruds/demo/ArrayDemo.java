@@ -1,4 +1,4 @@
-package training;
+package com.cruds.demo;
 
 import java.util.Scanner;
 

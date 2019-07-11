@@ -1,4 +1,6 @@
 serializable - when we have to send data from one jvm to another.
+it acts as a marker that data is coming from another jvm.
+serializable is a interface with no method in it.
 
 RMI - remote method invocation
 HTTP and RMI are used for transferring data to servlet

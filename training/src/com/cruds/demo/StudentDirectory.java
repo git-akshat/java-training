@@ -1,6 +1,9 @@
 package com.cruds.demo;
 
 import java.util.Scanner;
+
+import com.crud.exception.StudentException;
+
 import java.lang.Character;
 
 public class StudentDirectory {
@@ -31,7 +34,12 @@ public class StudentDirectory {
 						System.out.print("Enter Name: ");
 						name = sc.next();
 						//student[count].setName(name);
-						student[count] = new Student(rollno, name);
+						try {
+							student[count] = new Student(rollno, name);
+						} catch (StudentException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 						
 						System.out.println("\nStudent record added.");
 						
