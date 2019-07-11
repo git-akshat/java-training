@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import com.crud.exception.StudentException;
 import com.cruds.demo.Student;
 
-public class ObjectStreamDemo {
+public class ObjectOutputStreamDemo {
 	
 	public static void main(String[] args) {
 		
