@@ -1,8 +1,10 @@
 package com.cruds.demo;
 
+import java.io.Serializable;
+
 import com.crud.exception.StudentException;
 
-public class Student {
+public class Student implements Serializable{
 	
 	private int rollNo;
 	private String name;
