@@ -2,7 +2,7 @@ package com.cruds.demo;
 
 import java.io.Serializable;
 
-import com.crud.exception.StudentException;
+import com.cruds.exception.StudentException;
 
 public class Student implements Serializable{
 	

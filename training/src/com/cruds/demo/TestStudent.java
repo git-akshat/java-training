@@ -1,6 +1,6 @@
 package com.cruds.demo;
 
-import com.crud.exception.StudentException;
+import com.cruds.exception.StudentException;
 
 public class TestStudent {
 	

@@ -2,7 +2,7 @@ package com.cruds.demo;
 
 import java.util.Scanner;
 
-import com.crud.exception.StudentException;
+import com.cruds.exception.StudentException;
 
 import java.lang.Character;
 

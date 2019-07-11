@@ -1,4 +1,4 @@
-package com.crud.exception;
+package com.cruds.exception;
 
 public class StudentException extends Exception{
 	
