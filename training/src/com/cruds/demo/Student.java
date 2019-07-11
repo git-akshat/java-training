@@ -1,5 +1,7 @@
 package com.cruds.demo;
 
+import com.crud.exception.StudentException;
+
 public class Student {
 	
 	private int rollNo;
@@ -12,19 +14,26 @@ public class Student {
 //	}
 	
 	public Student() {
-		rollNo = -1;
+		rollNo = 0;
 		name = null;
 	}
 	
 	
-	public Student(int rollNo, String name) {
+	public Student(int rollNo, String name) throws StudentException{
+		if(rollNo < 0) {
+			throw new StudentException("Roll number cannot be negative " + rollNo);
+		}
+		
+		if(name != null & name.equals("")) {
+			throw new StudentException("Name cannot be empty");
+		}
 		this.rollNo = rollNo;
 		this.name = name;
 		//System.out.println("2 arg constructor");
 		count++;
 	}
 	
-	public Student(int rollNo, String name, String lastName) {
+	public Student(int rollNo, String name, String lastName) throws StudentException{
 		this(rollNo, name);
 		//this.lastName = lastName;
 		count++;
