@@ -1,9 +1,2 @@
-<html>
-<head>
-<title>README
-</title>
-</head>
-<body>
-Please refer to <A HREF="http://java.com/licensereadme">http://java.com/licensereadme</A> 
-</body>
-</html>
+101 Ritesh
+102 Akshat

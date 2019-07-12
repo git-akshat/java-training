@@ -9,3 +9,7 @@ if servlet wants to listen to client it has to implement remote.
 Type of exceptions : 
 1.checked - java.lang.exception
 2.unchecked - runtime Exception //compiler doesn't force to check these exception
+
+Hotfixing - creating jar file to detect serialVersionId mismatch and correct it with process called patching
+
+random access file

@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 import com.cruds.exception.StudentException;
 
-public class Student implements Serializable{
+public class Student implements Serializable, Comparable<Student>{
 	
 	private int rollNo;
-	private String name;
+	private transient String name;
 	//private String lastName;
 	private static int count; // to keep track of the number of object instance
 	
@@ -65,6 +65,12 @@ public class Student implements Serializable{
 
 	public static void setCount(int count) {
 		Student.count = count;
+	}
+
+
+	@Override
+	public int compareTo(Student o) {
+		return rollNo - o.getRollNo();
 	}
 
 //	static {
