@@ -9,14 +9,15 @@ public class ListDemo {
 	
 	public static void main(String[] args) {
 		
-		List<String> names = new ArrayList<>();
+		List<String> names = new ArrayList<String>();
 		names.add("akshat");
 		names.add("aditya");
 		
 		for(String s : names)
 		{
 			System.out.println(s);
-		}
+		}									
+		
 		
 		names.add(1, "tom");
 		
@@ -29,6 +30,7 @@ public class ListDemo {
 		}
 		
 		System.out.println();
+		
 		while(iter.hasPrevious())
 		{
 			System.out.println(iter.previous());

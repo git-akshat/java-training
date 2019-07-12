@@ -12,4 +12,4 @@ Type of exceptions :
 
 Hotfixing - creating jar file to detect serialVersionId mismatch and correct it with process called patching
 
-random access file
+RandomAccessFile is used to seek in a file.
