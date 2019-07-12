@@ -1,20 +1,22 @@
 package com.cruds.io;
 
-import java.io.File;
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 
-public class FileOutputStreamDemo {
+public class ReaderDemo {
 	
 	public static void main(String[] args) {
-		String msg = "Hello World!";
-		byte[] data = msg.getBytes();
 		
-		try(FileOutputStream fos = new FileOutputStream("Output.txt",true)){
-			fos.write(data);
-			fos.close();
-			System.out.println("File written successfully");
+		try(FileReader fr = new FileReader("states.txt");
+			BufferedReader br = new BufferedReader(fr)){
+			String line = br.readLine();
+			while(line != null) {
+				System.out.println(line);
+				line = br.readLine();
+			}
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -22,6 +24,7 @@ public class FileOutputStreamDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 
 }

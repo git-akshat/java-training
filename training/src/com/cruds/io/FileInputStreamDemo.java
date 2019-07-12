@@ -16,15 +16,22 @@ public class FileInputStreamDemo {
 		
 		//boiler plate code
 		
-		try (FileInputStream fis = new FileInputStream("C:/Program Files (x86)/Java/jdk1.8.0_91/README.html")){
+		try (FileInputStream fis = new FileInputStream("Output.txt")){
 			int size = fis.available();
 			System.out.println(size);
+
 			
 			byte[] data = new byte[size];
 			
 			fis.read(data);
 			
 			System.out.println(new String(data));
+			
+			/*String fileData = new String(data);
+			fileData = fileData.replaceAll("\n"," ");
+			String[] fileArr = fileData.split(" ");
+			System.out.println(fileArr[3]);*/
+			
 			
 			/*for(int i=0; i<size; i++) {
 				System.out.print((char) fis.read()); //reads character by character

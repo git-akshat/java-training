@@ -15,6 +15,8 @@ public class ObjectOutputStreamDemo {
 			ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("student.ser"));
 			Student s1 = new Student(101, "Anil");
 			os.writeObject(s1);
+			Student s2 = new Student(102, "ravi");
+			os.writeObject(s2);
 			os.close();
 			System.out.println("Object written successfully");
 		} catch (IOException e) {
