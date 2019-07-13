@@ -1,0 +1,14 @@
+create database sitdb;
+use sitdb;
+
+create table student
+(
+ rollno int primary key,
+ name varchar(50) not null
+);
+
+insert into student values (101, "sada");
+
+update student set name = 'sadanand' where rollno = 101;
+
+delete from student where rollno = 101;
