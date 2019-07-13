@@ -13,3 +13,14 @@ Type of exceptions :
 Hotfixing - creating jar file to detect serialVersionId mismatch and correct it with process called patching
 
 RandomAccessFile is used to seek in a file.
+
+transient is used in context of serialisation and deserialisation
+
+HashMap is not thread safe 
+
+All old legacy classes are thread safe
+1.Dictionary
+2.Hashtable
+3.Properties
+4.Stack
+5.Vector

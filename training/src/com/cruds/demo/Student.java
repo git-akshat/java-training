@@ -72,6 +72,11 @@ public class Student implements Serializable, Comparable<Student>{
 	public int compareTo(Student o) {
 		return rollNo - o.getRollNo();
 	}
+	
+	@Override
+	public String toString() {
+		return "Student [rollNo=" + rollNo + ", name=" + name + "]";
+	}
 
 //	static {
 //		System.out.println("Static block 2");
