@@ -1,5 +1,7 @@
 package com.cruds.collection;
 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -10,13 +12,16 @@ public class StudentSetDemo {
 	
 	public static void main(String[] args) {
 		
-		Set<Student> s= new TreeSet<>(new StudentNameComparator());
+		Set<Student> s= new TreeSet<>(new StudentComparator());
+
+		//Set<Student> s= new TreeSet<>();
 		
 		try {
 			s.add(new Student(101, "Anil"));
-			s.add(new Student(211, "tom"));
 			s.add(new Student(311, "bill"));
-			s.add(new Student(312, "bill"));
+			s.add(new Student(312, "dell"));
+
+			s.add(new Student(311, "bill"));
 
 
 		} catch (StudentException e) {
@@ -26,7 +31,7 @@ public class StudentSetDemo {
 		
 		for(Student stud : s)
 		{
-			System.out.println(stud.getName() + " " + stud.getRollNo());
+			System.out.println(stud);
 		}
 	}
 

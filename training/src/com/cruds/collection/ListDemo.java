@@ -22,6 +22,9 @@ public class ListDemo {
 		names.add(1, "tom");
 		
 		System.out.println("----Iterator---");
+		
+		//Iterator<String> iter = names.iterator();
+
 		ListIterator<String> iter = names.listIterator();
 		
 		while(iter.hasNext())
