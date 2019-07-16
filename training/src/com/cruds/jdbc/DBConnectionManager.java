@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.mysql.jdbc.CommunicationsException;
+
 public class DBConnectionManager {
 	
 	static
@@ -21,7 +23,7 @@ public class DBConnectionManager {
 		
 			try {
 				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sitdb", "root", "root");
-			} catch (SQLException e) {
+			}catch (SQLException e) {
 				e.printStackTrace();
 			}
 			return conn;
