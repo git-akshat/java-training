@@ -12,7 +12,7 @@ public class DataInputStreamDemo {
 		
 		DataInputStream dis;
 		try {
-			dis = new DataInputStream(new FileInputStream("emp.dat"));
+			dis = new DataInputStream(new FileInputStream("files/emp.dat"));
 			System.out.println(dis.readInt());
 			System.out.println(dis.readFloat());
 			System.out.println(dis.readUTF());

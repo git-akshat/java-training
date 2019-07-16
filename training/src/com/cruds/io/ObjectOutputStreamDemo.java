@@ -12,7 +12,7 @@ public class ObjectOutputStreamDemo {
 	public static void main(String[] args) {
 		
 		try {
-			ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("student.ser"));
+			ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("files/student.ser"));
 			Student s1 = new Student(101, "Anil");
 			os.writeObject(s1);
 			Student s2 = new Student(102, "ravi");

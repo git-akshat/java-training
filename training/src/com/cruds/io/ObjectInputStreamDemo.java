@@ -9,7 +9,7 @@ public class ObjectInputStreamDemo {
 	
 	public static void main(String[] args) {
 		try {
-			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("student.ser"));
+			ObjectInputStream ois = new ObjectInputStream(new FileInputStream("files/student.ser"));
 			Student s1 = (Student) ois.readObject();
 			ois.close();
 			System.out.println(s1.getName() + " " + s1.getRollNo());

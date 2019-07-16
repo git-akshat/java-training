@@ -20,7 +20,19 @@ HashMap is not thread safe
 
 All old legacy classes are thread safe
 1.Dictionary
-2.Hashtable
+2.HashTable
 3.Properties
 4.Stack
 5.Vector
+
+ODBC - open database connection
+OCI - oracle caller interface driver - partly written in c++
+middleware
+
+ssh - 22
+ftp - 21
+smtp - 25
+
+data access object process
+
+sql injection - ' OR '1' = '1 - doesn't work with prepare statement

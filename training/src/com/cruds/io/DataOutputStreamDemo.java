@@ -10,7 +10,7 @@ public class DataOutputStreamDemo {
 	public static void main(String[] args) {
 		
 		try {
-			DataOutputStream dos = new DataOutputStream(new FileOutputStream("emp.dat"));
+			DataOutputStream dos = new DataOutputStream(new FileOutputStream("files/emp.dat"));
 			dos.writeInt(101);
 			dos.writeFloat(3.1415f);
 			dos.writeUTF("akshat");

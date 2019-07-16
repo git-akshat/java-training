@@ -11,7 +11,7 @@ public class BufferDemo {
 	public static void main(String[] args) {
 		
 		try {
-			BufferedInputStream bis = new BufferedInputStream(new FileInputStream("output.txt"));
+			BufferedInputStream bis = new BufferedInputStream(new FileInputStream("files/output.txt"));
 			BufferedOutputStream bos = new BufferedOutputStream(System.out);
 			byte[] data = new byte[1024];
 			boolean eof = false;

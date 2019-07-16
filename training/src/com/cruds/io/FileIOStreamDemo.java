@@ -18,7 +18,7 @@ public static void main(String[] args) {
 			fis.read(data);
 			fis.close();
 			
-			FileOutputStream fos = new FileOutputStream("Output.txt");
+			FileOutputStream fos = new FileOutputStream("files/Output.txt");
 			fos.write(data);
 			fos.close();
 			

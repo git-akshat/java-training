@@ -18,3 +18,5 @@ insert into student values (101, "sada");
 update student set name = 'sadanand' where rollno = 101;
 
 delete from student where rollno = 101;
+
+create table user(username varchar(25)

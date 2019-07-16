@@ -9,7 +9,7 @@ public class ReaderDemo {
 	
 	public static void main(String[] args) {
 		
-		try(FileReader fr = new FileReader("states.txt");
+		try(FileReader fr = new FileReader("files/states.txt");
 			BufferedReader br = new BufferedReader(fr)){
 			String line = br.readLine();
 			while(line != null) {

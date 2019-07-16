@@ -10,7 +10,7 @@ public class FileOutputStreamDemo {
 		String msg = "Hello World!";
 		byte[] data = msg.getBytes();
 		
-		try(FileOutputStream fos = new FileOutputStream("Output.txt",true)){
+		try(FileOutputStream fos = new FileOutputStream("files/Output.txt",true)){
 			fos.write(data);
 			fos.close();
 			System.out.println("File written successfully");
