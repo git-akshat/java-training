@@ -36,3 +36,10 @@ smtp - 25
 data access object process
 
 sql injection - ' OR '1' = '1 - doesn't work with prepare statement
+
+javaFx is successor of swing
+
+awt depends on os widgets
+
+swing is successor of awt.
+in swing every key is prefixed with J
