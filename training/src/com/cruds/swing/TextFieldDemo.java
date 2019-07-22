@@ -45,7 +45,6 @@ public class TextFieldDemo extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				StudentDAO dao = new StudentDAO();
 				String name = txtName.getText();
-				int rollNo = Integer.parseInt(txtRollNo.getText());
 				
 				if(name.trim().length() == 0 || txtRollNo.getText().trim().length() == 0)
 				{
@@ -53,6 +52,9 @@ public class TextFieldDemo extends JFrame{
 					JOptionPane.showMessageDialog(panel, "Error", "Failed", JOptionPane.ERROR_MESSAGE);
 					return;
 				}
+				
+				int rollNo = Integer.parseInt(txtRollNo.getText());
+				
 				
 				try {
 					if(dao.create(new Student(rollNo, name)))
