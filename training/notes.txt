@@ -43,3 +43,7 @@ awt depends on os widgets
 
 swing is successor of awt.
 in swing every key is prefixed with J
+
+Enerprise java bean - EJB or spring bean
+
+MVC - model view and controller

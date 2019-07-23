@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
+
+import javax.swing.table.DefaultTableModel;
 
 import com.cruds.demo.Student;
 import com.cruds.exception.StudentException;
@@ -136,6 +139,34 @@ public class StudentDAO {
 		}
 		
 		return rows > 0;
+	}
+	
+	public DefaultTableModel getTableData()
+	{
+		String sql = "select rollno, name from student";
+		Vector<String> colNames = new Vector<>();
+		colNames.add("Roll no");
+		colNames.add("Name");
+		
+		Vector<Vector<String>> data = new Vector<>();
+		
+		try(Connection conn = DBConnectionManager.getConnection())
+		{
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs != null && rs.next())
+			{
+				Vector<String> row = new Vector<>();
+				row.add(String.valueOf(rs.getInt(1)));
+				row.add(rs.getString(2));
+				data.add(row);
+			}
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return new DefaultTableModel(data, colNames);
 	}
 
 }
