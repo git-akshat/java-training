@@ -1,7 +1,6 @@
 package com.cruds.swing;
 
 import java.awt.BorderLayout;
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
@@ -11,10 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.DefaultTableModel;
 
-import com.cruds.jdbc.StudentDAO;
 import com.cruds.service.StudentService;
 
 public class JTableDemo extends JFrame{
@@ -64,7 +61,7 @@ public class JTableDemo extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				int idx = table.getSelectedRow();
-				if(idx == -1)
+				if(idx == -1) 
 				{
 					JOptionPane.showMessageDialog(scrollpane, "Nothing selected", "Invalid", JOptionPane.ERROR_MESSAGE);
 					return;
@@ -74,7 +71,7 @@ public class JTableDemo extends JFrame{
 				if(StudentService.delete(roll))
 				{
 					table.setModel(StudentService.getDataForJTable());
-					idx = -1;
+					idx = -1; //after deleting set idx of previously selected item to -1
 				}
 			}
 		});

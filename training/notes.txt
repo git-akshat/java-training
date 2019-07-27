@@ -44,6 +44,31 @@ awt depends on os widgets
 swing is successor of awt.
 in swing every key is prefixed with J
 
-Enerprise java bean - EJB or spring bean
+Enterprise java bean - EJB or spring bean
 
 MVC - model view and controller
+
+ping google.com
+tracert 172.217.166.110 - traces the hop it follows
+
+WAR - web archive
+JAR - jar archive
+
+To set a local tomcat server inside eclipse
+Window -> Preferences -> Server -> Runtime Environment -> Add ->Apache Tomcat
+make sure to check the create new server checkbox
+then click next and give the location where tomcat is installed(C:\Program Files (x86)\Apache Software Foundation\Tomcat 8.5 in my case)
+
+Servlet once created doesn't get destroyed automatically
+it follows managed life cycle managed by server(tomcat in our case)
+
+Life cycle of servlet
+1. Instantiate
+2. Init
+3. Service - repeatedly get called for each request (internally calls DoGet and DoPost)
+4. Destroy
+
+scriplets - <%  %> - use to write java code inside html file.
+
+session handling
+jsp/servlet
