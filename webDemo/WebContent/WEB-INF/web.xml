@@ -24,4 +24,14 @@
     <servlet-name>StudentServlet</servlet-name>
     <url-pattern>/StudentServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DemoServlet</display-name>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.cruds.servlet.DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/DemoServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

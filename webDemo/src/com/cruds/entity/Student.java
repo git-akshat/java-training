@@ -1,4 +1,4 @@
-package com.cruds.entity;
+	package com.cruds.entity;
 
 import java.io.Serializable;
 
